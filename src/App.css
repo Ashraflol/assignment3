@@ -36,3 +36,51 @@
     transform: rotate(360deg);
   }
 }
+.form-switch{
+  padding-left: 6.5em !important;
+}
+
+.form-check-input{
+  font-size:40px;
+}
+
+.form-switch {
+  padding-left: 0px;
+}
+
+.form-custom{
+  vertical-align: top;
+
+}
+
+.menu-swiper .swiper-button-prev ,.menu-swiper .swiper-button-next{
+  color: black;
+  background-color: aliceblue;
+}
+
+.menu-swiper .swiper-button-prev::after ,.menu-swiper .swiper-button-next::after{
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.menu-swiper .swiper{
+  padding-inline: 40px;
+  color: #999a9c;
+  font-weight: 600;
+}
+
+.image-sizing{
+  object-fit: cover;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.box-foreach{
+  border-radius: 20px;
+}
+
+.subcat-image{
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: cover;
+}
