@@ -17,31 +17,33 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="">
-            <h3 className="d-inline-block">
+            <h4 className="d-inline-block">
               Non-member <br/> pricing
-            </h3>
-            {/* <h3 className="d-inline-block">
+            </h4>
+            {/* <h4 className="d-inline-block">
               pricing
-            </h3> */}
+            </h4> */}
             <Form className="d-inline-block form-custom">
               <Form.Check 
                 type="switch"
                 id="custom-switch"
               />
             </Form>
-            <h3 className="d-inline-block">
+            <h4 className="d-inline-block">
               <span className='text-danger'>Extras</span> Member <br/> pricing
-            </h3>
-            {/* <h3 className="d-inline-block">
+            </h4>
+            {/* <h4 className="d-inline-block">
               pricing
-            </h3> */}
+            </h4> */}
         </div>
       </div>
       <div className="pt-4 pb-2 menu-swiper">
       <Swiper
         spaceBetween={10}
-        slidesPerView={8}
+        slidesPerView={10}
         modules={[Navigation]}
+        observer={true}
+        observerParent={true}
         loop={true}
         navigation={true}
         onSlideChange={() => console.log('slide change')}
@@ -50,7 +52,7 @@ function App() {
       >
         {mydata.map(item=>{
           return(
-            <SwiperSlide key={item.id}><h6>{item.tabName}</h6></SwiperSlide>
+            <SwiperSlide key={item.id}><span>{item.tabName}</span></SwiperSlide>
           )
         })}
       </Swiper>

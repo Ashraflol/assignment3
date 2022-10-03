@@ -64,7 +64,7 @@
 }
 
 .menu-swiper .swiper{
-  padding-inline: 40px;
+  /* padding-inline: 40px; */
   color: #999a9c;
   font-weight: 600;
 }
@@ -84,3 +84,7 @@
   width: 100%;
   object-fit: cover;
 }
+
+/* .swiper-slide {
+  width: 100% !important;
+} */
